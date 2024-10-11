@@ -22,6 +22,7 @@ public class PersonService {
 	private static final String EXCEL_FILE_PATH = "src/main/resources/output/person_data.xlsx";
 	
 	public void generateExcelFromJSON() throws Exception {
+		System.out.println("Under service");
 		ObjectMapper objectMapper = new ObjectMapper();
 		Workbook workbook = new XSSFWorkbook();
 		Sheet sheet = workbook.createSheet("Person Data");
